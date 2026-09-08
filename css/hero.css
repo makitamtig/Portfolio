@@ -1,81 +1,11 @@
-﻿/* ==========================================
-                HERO SECTION
-========================================== */
-/*
-
-/* ==========================================
-   MOBILE HERO
-   ========================================== */
-
-@media (max-width: 768px) {
-
-    .hero {
-        padding: 60px 0 40px;
-    }
-
-    .hero-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    /* Text section */
-    .hero-content {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .hero-subtitle {
-        font-size: 0.85rem;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-        line-height: 1.2;
-    }
-
-    .hero p {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-
-    /* Company image/logo */
-    .hero-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 35px;
-    }
-
-    .hero-image img {
-        display: block;
-        width: 220px;
-        max-width: 80%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    /* Button */
-    .hero-buttons {
-        display: flex;
-        justify-content: center;
-    }
-}
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 80px;
-}*/
-
-.hero {
+﻿.hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 90px;
-    background: radial-gradient(circle at top left,#DBEAFE 0%,transparent 45%), radial-gradient(circle at bottom right,#BFDBFE 0%,transparent 35%), var(--background);
+    background: radial-gradient(circle at top left,#DBEAFE 0%,transparent 45%),
+                radial-gradient(circle at bottom right,#BFDBFE 0%,transparent 35%),
+                var(--background);
 }
 
 .hero-container {
@@ -113,15 +43,6 @@
     display: flex;
     gap: 20px;
 }
-/*
-.btn-primary {
-    background: #2563eb;
-    color: white;
-    padding: 15px 32px;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: .3s;
-}*/
 
 .btn-primary {
     background: linear-gradient(135deg,#2563EB,#3B82F6);
@@ -132,18 +53,10 @@
     box-shadow: var(--shadow-small);
 }
 
-    /* .btn-primary:hover {
-        transform: translateY(-4px);
-    }*/
-
-    /* .btn-primary:hover {
-        transform: translateY(-5px);
-        box-shadow: var(--shadow-large);
-    }*/
-    .btn-primary:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 40px rgba(37,99,235,.35);
-    }
+.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(37,99,235,.35);
+}
 
 .btn-secondary {
     border: 2px solid #2563eb;
@@ -154,13 +67,84 @@
     transition: .35s ease;
 }
 
-    .btn-secondary:hover {
-        background: #2563eb;
-        color: white;
-    }
+.btn-secondary:hover {
+    background: #2563eb;
+    color: white;
+}
 
 .hero-image img {
     width: 100%;
     max-width: 550px;
     margin: auto;
+}
+
+
+/* ==========================================
+   MOBILE HERO - IMAGE FIRST
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+    }
+
+    /* IMAGE / LOGO FIRST */
+    .hero-image {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        max-width: 75%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    /* TEXT SECOND */
+    .hero-content {
+        order: 2;
+        width: 100%;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+        line-height: 1.2;
+        margin: 15px auto 20px;
+        max-width: 100%;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 }
