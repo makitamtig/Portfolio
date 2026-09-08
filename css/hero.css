@@ -1,72 +1,13 @@
-﻿/* ==========================================
-   MOBILE HERO - PROFESSIONAL LAYOUT
-   ========================================== */
-
-@media (max-width: 768px) {
-
-    /* Keep the hero itself normal */
-    .hero {
-        min-height: auto;
-        padding-top: 100px;
-        padding-bottom: 60px;
-    }
-
-    /* IMPORTANT: only change the actual hero columns */
-    .hero-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        gap: 30px;
-        text-align: center;
-    }
-
-    /* LOGO / IMAGE FIRST */
-    .hero-image {
-        grid-row: 1;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-
-        .hero-image img {
-            width: 220px;
-            max-width: 75%;
-            height: auto;
-            display: block;
-            object-fit: contain;
-            margin: 0 auto;
-        }
-
-    /* TEXT SECOND */
-    .hero-content {
-        grid-row: 2;
-        width: 100%;
-    }
-
-    .hero-subtitle {
-        font-size: 14px;
-        letter-spacing: 1.5px;
-    }
-
-    .hero-content h1 {
-        font-size: 38px;
-        line-height: 1.2;
-        margin: 15px auto 20px;
-        max-width: 100%;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-        line-height: 1.7;
-        margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-}
+﻿//* ==========================================
+                HERO SECTION
+========================================== */
+/*
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}*/
 
 .hero {
     min-height: 100vh;
@@ -161,4 +102,172 @@
     width: 100%;
     max-width: 550px;
     margin: auto;
+}
+
+
+/* ==========================================
+   MOBILE HERO - FINAL PROFESSIONAL VERSION
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .hero {
+        min-height: auto;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    /* FORCE HERO INTO ONE COLUMN */
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: 0 !important;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* ==========================================
+       1. LOGO
+       ========================================== */
+
+    .hero-image {
+        order: 1 !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 0 35px 0 !important;
+    }
+
+        .hero-image img {
+            width: 220px !important;
+            max-width: 70% !important;
+            height: auto !important;
+            display: block !important;
+            margin: 0 auto !important;
+            object-fit: contain;
+        }
+
+    /* ==========================================
+       2. MAIN TEXT
+       ========================================== */
+
+    .hero-content {
+        order: 2 !important;
+        width: 100% !important;
+        max-width: 600px !important;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        display: block;
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        line-height: 1.12;
+        margin: 0 auto 20px;
+        max-width: 600px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 0 auto 30px;
+        max-width: 520px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn-primary {
+        padding: 15px 28px;
+    }
+
+    /* ==========================================
+       3. STATS
+       ========================================== */
+
+    .hero-stats {
+        order: 3 !important;
+        width: 100% !important;
+        max-width: 500px !important;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px;
+        margin-top: 45px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .stat-item {
+        text-align: center;
+        min-width: 0;
+    }
+
+        .stat-item h2 {
+            font-size: 28px;
+            line-height: 1.2;
+            margin: 0 0 5px;
+        }
+
+        .stat-item span {
+            font-size: 13px;
+            line-height: 1.4;
+            white-space: nowrap;
+        }
+}
+
+
+/* ==========================================
+   VERY SMALL PHONES
+   ========================================== */
+
+@media (max-width: 400px) {
+
+    .hero {
+        padding-top: 90px;
+    }
+
+    .hero-image img {
+        width: 190px !important;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-stats {
+        gap: 5px;
+        padding: 0 8px;
+    }
+
+    .stat-item h2 {
+        font-size: 24px;
+    }
+
+    .stat-item span {
+        font-size: 11px;
+    }
 }
