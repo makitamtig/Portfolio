@@ -1,0 +1,85 @@
+﻿
+/* ==========================================
+            DESIGN SYSTEM
+========================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Main Colors */
+
+    --primary: #2563EB;
+    --primary-light: #60A5FA;
+    --secondary: #0F172A;
+    --text: #334155;
+    --text-light: #64748B;
+    --white: #ffffff;
+    --background: #F8FAFC;
+    /* Shadows */
+
+    --shadow-small: 0 5px 15px rgba(0,0,0,.05);
+    --shadow-medium: 0 15px 35px rgba(0,0,0,.08);
+    --shadow-large: 0 20px 60px rgba(0,0,0,.12);
+    /* Radius */
+
+    --radius: 20px;
+    /* Animation */
+
+    --transition: .35s ease;
+}
+
+/*Start Css 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    background: var(--background);
+    color: var(--secondary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+::selection {
+    background: var(--primary);
+    color: white;
+}
+/*body {
+    font-family: 'Poppins',sans-serif;*/
+    /* background: #f8fafc;*/
+    /*  color: #1e293b;*/
+    /*background: var(--background);
+    color: var(--secondary);
+}*/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ==========================================
+            GLOBAL CONTAINER
+========================================== */
+
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+

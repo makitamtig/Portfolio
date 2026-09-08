@@ -1,0 +1,80 @@
+﻿/* ==========================================
+                NAVIGATION
+========================================== */
+
+/*.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    z-index: 1000;
+}
+*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,.90);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 8px 30px rgba(15,23,42,.08);
+    z-index: 999;
+    transition: .35s ease;
+}
+
+    .navbar .container {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+/*.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2563eb;
+}
+*/
+/*logo name to be 2 diffrent colors 
+*/
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--secondary);
+    letter-spacing: 1px;
+}
+
+    .logo span {
+        color: var(--primary);
+    }
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+    .nav-links a {
+        color: #1e293b;
+        font-weight: 500;
+        transition: .3s;
+    }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+.btn-contact {
+    background: #2563eb;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+    .btn-contact:hover {
+        transform: translateY(-3px);
+    }
