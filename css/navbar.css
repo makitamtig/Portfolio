@@ -2,79 +2,163 @@
                 NAVIGATION
 ========================================== */
 
-/*.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    box-shadow: 0 5px 20px rgba(0,0,0,.05);
-    z-index: 1000;
-}
-*/
+/* ==========================================
+   NAVBAR
+========================================== */
 
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255,255,255,.90);
+    background: rgba(255, 255, 255, 0.90);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    box-shadow: 0 8px 30px rgba(15,23,42,.08);
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
     z-index: 999;
-    transition: .35s ease;
+    transition: 0.35s ease;
 }
 
-    .navbar .container {
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-/*.logo {
-    font-size: 28px;
-    font-weight: 700;
-    color: #2563eb;
+.navbar .container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-*/
-/*logo name to be 2 diffrent colors 
-*/
+
+/* LOGO */
+
 .logo {
+    display: inline-block;
+    text-decoration: none;
     font-size: 30px;
     font-weight: 800;
     color: var(--secondary);
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
-    .logo span {
-        color: var(--primary);
-    }
+.logo span {
+    color: var(--primary);
+}
+
+/* DESKTOP NAVIGATION */
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+.nav-links a {
+    color: #1e293b;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* HAMBURGER */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #0f172a;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 8px;
+    line-height: 1;
+}
+
+/* ==========================================
+   MOBILE NAVIGATION
+========================================== */
+
+@media (max-width: 768px) {
+
+    .navbar .container {
+        height: 70px;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 26px;
+        position: relative;
+        z-index: 1001;
+    }
+
+    /* Show hamburger */
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1001;
+    }
+
+    /* Hide menu initially */
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+
+        padding: 10px 0 15px;
+        margin: 0;
+
+        box-shadow: 0 15px 30px rgba(15, 23, 42, 0.10);
+
+        /* Hidden */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        pointer-events: none;
+
+        transition:
+            opacity 0.25s ease,
+            transform 0.25s ease,
+            visibility 0.25s ease;
+    }
+
+    /* Open menu */
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
 
     .nav-links a {
-        color: #1e293b;
-        font-weight: 500;
-        transition: .3s;
+        display: block;
+        width: 100%;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        font-size: 16px;
     }
 
-        .nav-links a:hover {
-            color: #2563eb;
-        }
-
-.btn-contact {
-    background: #2563eb;
-    color: white;
-    padding: 14px 30px;
-    border-radius: 30px;
-    transition: .3s;
+    .nav-links a:hover {
+        background: #eff6ff;
+    }
 }
-
-    .btn-contact:hover {
-        transform: translateY(-3px);
-    }
