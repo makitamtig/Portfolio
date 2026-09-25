@@ -486,8 +486,6 @@ html {
         font-weight: 600;
     }
 
-
-
 /* ==========================================
    IMAGE LIGHTBOX
 ========================================== */
@@ -496,52 +494,39 @@ html {
     position: fixed;
     inset: 0;
     background: rgba(15, 23, 42, 0.94);
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 40px;
-
     opacity: 0;
     visibility: hidden;
-
-    transition: opacity 0.3s ease,
-                visibility 0.3s ease;
-
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 9999;
 }
 
-.image-lightbox.active {
-    opacity: 1;
-    visibility: visible;
-}
+    .image-lightbox.active {
+        opacity: 1;
+        visibility: visible;
+    }
 
 .lightbox-content {
     max-width: 90vw;
     max-height: 88vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.lightbox-content img {
-    max-width: 90vw;
-    max-height: 80vh;
-
-    object-fit: contain;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 25px 80px rgba(0, 0, 0, 0.45);
-
-    transform: scale(0.94);
-
-    transition: transform 0.3s ease;
-}
+    .lightbox-content img {
+        max-width: 90vw;
+        max-height: 80vh;
+        object-fit: contain;
+        border-radius: 12px;
+        box-shadow: 0 25px 80px rgba(0, 0, 0, 0.45);
+        transform: scale(0.94);
+        transition: transform 0.3s ease;
+    }
 
 .image-lightbox.active .lightbox-content img {
     transform: scale(1);
@@ -554,16 +539,11 @@ html {
 
 .lightbox-caption {
     margin-top: 18px;
-
     color: #ffffff;
-
     font-size: 15px;
     font-weight: 500;
-
     letter-spacing: 0.3px;
-
     text-align: center;
-
     opacity: 0.9;
 }
 
@@ -574,38 +554,27 @@ html {
 
 .lightbox-close {
     position: absolute;
-
     top: 25px;
     right: 30px;
-
     width: 48px;
     height: 48px;
-
     border: none;
     border-radius: 50%;
-
     background: rgba(255, 255, 255, 0.1);
-
     color: #ffffff;
-
     font-size: 20px;
-
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition: all 0.25s ease;
-
     z-index: 10001;
 }
 
-.lightbox-close:hover {
-    background: rgba(255, 255, 255, 0.2);
-
-    transform: rotate(90deg);
-}
+    .lightbox-close:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: rotate(90deg);
+    }
 
 
 /* ==========================================
@@ -615,39 +584,28 @@ html {
 .lightbox-prev,
 .lightbox-next {
     position: absolute;
-
     top: 50%;
     transform: translateY(-50%);
-
     width: 52px;
     height: 52px;
-
     border: none;
     border-radius: 50%;
-
     background: rgba(255, 255, 255, 0.1);
-
     color: #ffffff;
-
     font-size: 18px;
-
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition: all 0.25s ease;
-
     z-index: 10001;
 }
 
-.lightbox-prev:hover,
-.lightbox-next:hover {
-    background: rgba(255, 255, 255, 0.2);
-
-    transform: translateY(-50%) scale(1.08);
-}
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-50%) scale(1.08);
+    }
 
 .lightbox-prev {
     left: 30px;
@@ -685,7 +643,6 @@ html {
     .lightbox-close {
         top: 15px;
         right: 15px;
-
         width: 42px;
         height: 42px;
     }
@@ -694,7 +651,6 @@ html {
     .lightbox-next {
         width: 42px;
         height: 42px;
-
         font-size: 15px;
     }
 
