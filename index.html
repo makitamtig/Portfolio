@@ -1,4 +1,4 @@
-﻿﻿
+﻿
 <!DOCTYPE html>
 
 <html lang="en">
@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/services.css">
 
     <link rel="stylesheet" href="css/portfolio.css">
+
+    <link rel="stylesheet" href="css/Screenshots.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -434,70 +436,92 @@
             </div>
 
 
-            ```html
+
             <!-- ======================================
                      PROJECT SCREENSHOTS
             ======================================= -->
+            <!-- PROFESSIONAL PROJECT SCREENSHOT VIEWER -->
+            <section class="project-showcase" aria-label="Jewelry Management project screenshots">
 
-            <div class="portfolio-video-intro">
-
-                <span>Project Walkthrough</span>
-
-                <h3>
-                    See The System In Action
-                </h3>
-
-                <p>
-                    From business management and product administration
-                    to customization, shopping, payments and order processing,
-                    this walkthrough showcases the key features of the platform.
-                </p>
-
-            </div>
-
-
-            <!-- ======================================
-                     SCREENSHOT GALLERY
-            ======================================= -->
-
-            <div class="project-gallery">
-
-
-                <!-- ======================================
-                     IMAGE 01 — BUSINESS DASHBOARD
-                ======================================= -->
-
-                <div class="gallery-card gallery-large">
-
-                    <img src="images/portfolio/main.png"
-                         alt="Jewelry Business Management Dashboard"
-                         class="gallery-image">
-
-                    <div class="gallery-overlay">
-
-                        <div>
-
-                            <span>01</span>
-
-                          
-
-                            <p>
-                                A centralized dashboard providing an overview
-                                of the platform and its core business operations.
-                            </p>
-
-                        </div>
-
+                <div class="showcase-heading">
+                    <div>
+                        <span class="eyebrow">System Screens</span>
+                        <h3>Explore the Platform</h3>
                     </div>
 
+                    <span class="screen-counter" id="screenCounter">01 / 14</span>
                 </div>
 
+                <div class="showcase-main">
+                    <button class="showcase-image-button" id="openLightbox" type="button"
+                            aria-label="Open Business Dashboard screenshot in full screen">
+
+                        <img id="mainScreenshot"
+                             src="images/portfolio/main.png"
+                             alt="Jewelry Business Management Dashboard">
+
+                        <span class="expand-image">
+                            <i class="fa-solid fa-expand"></i>
+                            View full screen
+                        </span>
+                    </button>
+
+                    <div class="showcase-details">
+                        <span id="screenNumber">01</span>
+                        <h4 id="screenTitle">Business Dashboard</h4>
+
+                        <p id="screenDescription">
+                            A centralized dashboard providing an overview of the platform
+                            and its core business operations.
+                        </p>
+
+                        <div class="showcase-navigation">
+                            <button type="button" id="previousScreen" aria-label="Previous screen">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+
+                            <button type="button" id="nextScreen" aria-label="Next screen">
+                                Next screen
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thumbnail navigation: visitors can directly choose any screen -->
+                <div class="screenshot-thumbnails" id="screenshotThumbnails"></div>
+
+            </section>
+
+
+            <!-- FULL-SCREEN IMAGE VIEWER -->
+            <div class="project-lightbox" id="projectLightbox" aria-hidden="true">
+
+                <button class="lightbox-close" id="closeLightbox" type="button"
+                        aria-label="Close full-screen image">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <button class="lightbox-arrow lightbox-previous" id="lightboxPrevious"
+                        type="button" aria-label="Previous screenshot">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="lightbox-content">
+                    <img id="lightboxImage"
+                         src="images/portfolio/main.png"
+                         alt="Jewelry Business Management Dashboard">
+
+                    <div class="lightbox-caption">
+                        <span id="lightboxCounter">01 / 14</span>
+                        <h4 id="lightboxTitle">Business Dashboard</h4>
+                    </div>
+                </div>
 
                 <!-- ======================================
                      IMAGE 02 — PRODUCT MANAGEMENT
                 ======================================= -->
-
-                <div class="gallery-card">
+                <!--<div class="gallery-card">
 
                     <img src="images/portfolio/manageproducts.png"
                          alt="Jewelry Product Management"
@@ -509,7 +533,9 @@
 
                             <span>02</span>
 
-                          
+                            <h4>
+                                Product Management
+                            </h4>
 
                             <p>
                                 Manage jewelry products, variants and product
@@ -520,14 +546,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 03 — CATEGORIES
                 ======================================= -->
-
-                <div class="gallery-card">
+                <!--<div class="gallery-card">
 
                     <img src="images/portfolio/Categories.png"
                          alt="Jewelry Product Categories"
@@ -539,7 +562,9 @@
 
                             <span>03</span>
 
-                           
+                            <h4>
+                                Product Categories
+                            </h4>
 
                             <p>
                                 Browse products through organized categories
@@ -550,14 +575,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 04 — RINGS
                 ======================================= -->
-
-                <div class="gallery-card">
+                <!--<div class="gallery-card">
 
                     <img src="images/portfolio/rings.png"
                          alt="Jewelry Ring Collection"
@@ -569,7 +591,9 @@
 
                             <span>04</span>
 
-                           
+                            <h4>
+                                Ring Collection
+                            </h4>
 
                             <p>
                                 Explore the available ring collection and
@@ -580,14 +604,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 05 — CUSTOMIZATION MAIN PAGE
                 ======================================= -->
-
-                <div class="gallery-card">
+                <!--<div class="gallery-card">
 
                     <img src="images/portfolio/customization.png"
                          alt="Jewelry Product Customization"
@@ -599,7 +620,9 @@
 
                             <span>05</span>
 
-                           
+                            <h4>
+                                Product Customization
+                            </h4>
 
                             <p>
                                 A dedicated customization experience that allows
@@ -610,14 +633,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 06 — RING CUSTOMIZATION
                 ======================================= -->
-
-                <div class="gallery-card">
+                <!--<div class="gallery-card">
 
                     <img src="images/portfolio/RingCustomization.png"
                          alt="Ring Customization Options"
@@ -629,7 +649,9 @@
 
                             <span>06</span>
 
-                           
+                            <h4>
+                                Ring Customization
+                            </h4>
 
                             <p>
                                 Customers can explore different ring customization
@@ -640,14 +662,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 07 — OTHER CUSTOMIZATION
                 ======================================= -->
-
-                <div class="gallery-card">
+                <!--<div class="gallery-card">
 
                     <img src="images/portfolio/OtherCustomization.png"
                          alt="Additional Jewelry Customization"
@@ -659,7 +678,9 @@
 
                             <span>07</span>
 
-                          
+                            <h4>
+                                Additional Customization
+                            </h4>
 
                             <p>
                                 Additional customization forms provide customers
@@ -670,14 +691,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 08 — BRACELET CUSTOMIZATION
                 ======================================= -->
-
-                <div class="gallery-card">
+                <!--<div class="gallery-card">
 
                     <img src="images/portfolio/Braceletcustomization.png"
                          alt="Bracelet Customization"
@@ -689,7 +707,9 @@
 
                             <span>08</span>
 
-                           
+                            <h4>
+                                Bracelet Customization
+                            </h4>
 
                             <p>
                                 A dedicated customization experience designed
@@ -700,14 +720,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 09 — BEST SELLERS
                 ======================================= -->
-
-                <div class="gallery-card">
+                <!--<div class="gallery-card">
 
                     <img src="images/portfolio/Bestseller.png"
                          alt="Jewelry Best Seller Products"
@@ -719,7 +736,9 @@
 
                             <span>09</span>
 
-                          
+                            <h4>
+                                Featured & Best Sellers
+                            </h4>
 
                             <p>
                                 Highlighted product sliders showcase best sellers,
@@ -730,14 +749,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 10 — FILTERING
                 ======================================= -->
-
-                <div class="gallery-card gallery-wide">
+                <!--<div class="gallery-card gallery-wide">
 
                     <img src="images/portfolio/filtereddetails.png"
                          alt="Jewelry Product Filtering"
@@ -749,7 +765,9 @@
 
                             <span>10</span>
 
-                           
+                            <h4>
+                                Advanced Product Filtering
+                            </h4>
 
                             <p>
                                 Customers can narrow their search by product,
@@ -761,14 +779,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 11 — SHOPPING CART
                 ======================================= -->
-
-                <div class="gallery-card gallery-wide">
+                <!--<div class="gallery-card gallery-wide">
 
                     <img src="images/portfolio/Shoppingcart.png"
                          alt="Jewelry Shopping Cart"
@@ -780,7 +795,9 @@
 
                             <span>11</span>
 
-                          
+                            <h4>
+                                Shopping Cart
+                            </h4>
 
                             <p>
                                 Customers can review selected products,
@@ -792,14 +809,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 12 — PAYMENT
                 ======================================= -->
-
-                <div class="gallery-card gallery-wide">
+                <!--<div class="gallery-card gallery-wide">
 
                     <img src="images/portfolio/paymentpage.png"
                          alt="Jewelry Payment Page"
@@ -811,7 +825,10 @@
 
                             <span>12</span>
 
-                          
+                            <h4>
+                                Secure Payment Experience
+                            </h4>
+
                             <p>
                                 A dedicated checkout and payment experience
                                 designed to complete customer purchases smoothly.
@@ -821,14 +838,11 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 13 — ORDER MANAGEMENT
                 ======================================= -->
-
-                <div class="gallery-card gallery-wide">
+                <!--<div class="gallery-card gallery-wide">
 
                     <img src="images/portfolio/Ordermanagmentpage.png"
                          alt="Jewelry Order Management"
@@ -840,7 +854,9 @@
 
                             <span>13</span>
 
-                           
+                            <h4>
+                                Order Management
+                            </h4>
 
                             <p>
                                 Manage customer orders and monitor order information
@@ -851,41 +867,50 @@
 
                     </div>
 
-                </div>
-
-
+                </div>-->
                 <!-- ======================================
                      IMAGE 14 — RESTOCKING
                 ======================================= -->
+                <!--<div class="gallery-card gallery-wide">
 
-                <div class="gallery-card gallery-wide">
+                        <img src="images/portfolio/Restocking.png"
+                             alt="Jewelry Product Restocking"
+                             class="gallery-image">
 
-                    <img src="images/portfolio/Restocking.png"
-                         alt="Jewelry Product Restocking"
-                         class="gallery-image">
+                        <div class="gallery-overlay">
 
-                    <div class="gallery-overlay">
+                            <div>
 
-                        <div>
+                                <span>14</span>
 
-                            <span>14</span>
+                                <h4>
+                                    Product Restocking
+                                </h4>
 
-                           
+                                <p>
+                                    When an item is out of stock, the platform provides
+                                    a way to reorder the product and continue the process
+                                    through payment.
+                                </p>
 
-                            <p>
-                                When an item is out of stock, the platform provides
-                                a way to reorder the product and continue the process
-                                through payment.
-                            </p>
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>
 
+                </div>-->
+
+
+
+                <button class="lightbox-arrow lightbox-next" id="lightboxNext"
+                        type="button" aria-label="Next screenshot">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
 
             </div>
+
 
 
             <!-- ==========================================
@@ -1104,6 +1129,194 @@
     <!-- ==========================================
          PORTFOLIO IMAGE LIGHTBOX
     =========================================== -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const screenshots = [
+                {
+                    image: "images/portfolio/main.png",
+                    title: "Business Dashboard",
+                    description: "A centralized dashboard providing an overview of the platform and its core business operations."
+                },
+                {
+                    image: "images/portfolio/manageproducts.png",
+                    title: "Product Management",
+                    description: "Manage jewelry products, variants and product information from a centralized management interface."
+                },
+                {
+                    image: "images/portfolio/Categories.png",
+                    title: "Product Categories",
+                    description: "Browse products through organized categories or quickly discover items using the search experience."
+                },
+                {
+                    image: "images/portfolio/rings.png",
+                    title: "Ring Collection",
+                    description: "Explore the available ring collection and browse products offered through the jewelry storefront."
+                },
+                {
+                    image: "images/portfolio/customization.png",
+                    title: "Product Customization",
+                    description: "A dedicated customization experience that allows customers to personalize their jewelry selections."
+                },
+                {
+                    image: "images/portfolio/RingCustomization.png",
+                    title: "Ring Customization",
+                    description: "Customers can explore ring customization options and choose their preferred configuration."
+                },
+                {
+                    image: "images/portfolio/OtherCustomization.png",
+                    title: "Additional Customization",
+                    description: "Additional customization forms provide more ways to personalize jewelry products."
+                },
+                {
+                    image: "images/portfolio/Braceletcustomization.png",
+                    title: "Bracelet Customization",
+                    description: "A dedicated experience designed for creating personalized bracelet selections."
+                },
+                {
+                    image: "images/portfolio/Bestseller.png",
+                    title: "Featured & Best Sellers",
+                    description: "Highlighted product sliders showcase best sellers, promotional products and other featured items."
+                },
+                {
+                    image: "images/portfolio/filtereddetails.png",
+                    title: "Advanced Product Filtering",
+                    description: "Customers can filter by product, category, color, size and stone color to find the right item quickly."
+                },
+                {
+                    image: "images/portfolio/Shoppingcart.png",
+                    title: "Shopping Cart",
+                    description: "Customers can review selected products, manage their cart and prepare their order before checkout."
+                },
+                {
+                    image: "images/portfolio/paymentpage.png",
+                    title: "Secure Payment Experience",
+                    description: "A dedicated checkout and payment experience designed to complete customer purchases smoothly."
+                },
+                {
+                    image: "images/portfolio/Ordermanagmentpage.png",
+                    title: "Order Management",
+                    description: "Manage customer orders and monitor order information through the platform's order-management interface."
+                },
+                {
+                    image: "images/portfolio/Restocking.png",
+                    title: "Product Restocking",
+                    description: "When an item is out of stock, the platform provides a simple way to reorder it and continue through payment."
+                }
+            ];
+
+            let currentIndex = 0;
+
+            const mainImage = document.getElementById("mainScreenshot");
+            const screenNumber = document.getElementById("screenNumber");
+            const screenCounter = document.getElementById("screenCounter");
+            const screenTitle = document.getElementById("screenTitle");
+            const screenDescription = document.getElementById("screenDescription");
+            const thumbnails = document.getElementById("screenshotThumbnails");
+
+            const lightbox = document.getElementById("projectLightbox");
+            const lightboxImage = document.getElementById("lightboxImage");
+            const lightboxCounter = document.getElementById("lightboxCounter");
+            const lightboxTitle = document.getElementById("lightboxTitle");
+
+            function numberFormat(number) {
+                return String(number).padStart(2, "0");
+            }
+
+            function createThumbnails() {
+                screenshots.forEach((screen, index) => {
+                    const button = document.createElement("button");
+
+                    button.type = "button";
+                    button.className = "thumbnail-button";
+                    button.setAttribute("aria-label", "Show " + screen.title);
+                    button.innerHTML = `
+                    <img src="${screen.image}" alt="">
+                    <span>${numberFormat(index + 1)}</span>
+                `;
+
+                    button.addEventListener("click", function () {
+                        showScreen(index);
+                    });
+
+                    thumbnails.appendChild(button);
+                });
+            }
+
+            function showScreen(index) {
+                currentIndex = (index + screenshots.length) % screenshots.length;
+
+                const screen = screenshots[currentIndex];
+                const number = numberFormat(currentIndex + 1);
+                const counterText = number + " / " + numberFormat(screenshots.length);
+
+                mainImage.src = screen.image;
+                mainImage.alt = screen.title;
+                screenNumber.textContent = number;
+                screenCounter.textContent = counterText;
+                screenTitle.textContent = screen.title;
+                screenDescription.textContent = screen.description;
+
+                lightboxImage.src = screen.image;
+                lightboxImage.alt = screen.title;
+                lightboxCounter.textContent = counterText;
+                lightboxTitle.textContent = screen.title;
+
+                document.querySelectorAll(".thumbnail-button").forEach((button, buttonIndex) => {
+                    button.classList.toggle("active", buttonIndex === currentIndex);
+                });
+
+                const activeThumbnail = document.querySelector(".thumbnail-button.active");
+
+                if (activeThumbnail) {
+                    activeThumbnail.scrollIntoView({
+                        behavior: "smooth",
+                        block: "nearest",
+                        inline: "center"
+                    });
+                }
+            }
+
+            function openLightbox() {
+                lightbox.classList.add("is-open");
+                lightbox.setAttribute("aria-hidden", "false");
+                document.body.style.overflow = "hidden";
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove("is-open");
+                lightbox.setAttribute("aria-hidden", "true");
+                document.body.style.overflow = "";
+            }
+
+            document.getElementById("previousScreen").addEventListener("click", () => showScreen(currentIndex - 1));
+            document.getElementById("nextScreen").addEventListener("click", () => showScreen(currentIndex + 1));
+
+            document.getElementById("openLightbox").addEventListener("click", openLightbox);
+            document.getElementById("closeLightbox").addEventListener("click", closeLightbox);
+
+            document.getElementById("lightboxPrevious").addEventListener("click", () => showScreen(currentIndex - 1));
+            document.getElementById("lightboxNext").addEventListener("click", () => showScreen(currentIndex + 1));
+
+            lightbox.addEventListener("click", function (event) {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "ArrowLeft") showScreen(currentIndex - 1);
+                if (event.key === "ArrowRight") showScreen(currentIndex + 1);
+                if (event.key === "Escape") closeLightbox();
+            });
+
+            createThumbnails();
+            showScreen(0);
+
+        });
+    </script>
+
 
     <script>
 
