@@ -59,7 +59,10 @@
 /* ==========================================
     VIDEO
     ========================================== */
-
+```css
+/* ==========================================
+   PROJECT VIDEO — PRESERVE ORIGINAL LAYOUT
+   ========================================== */
 .project-video {
     width: 100%;
 }
@@ -75,15 +78,15 @@
     .video-wrapper video {
         display: block;
         width: 100%;
-        aspect-ratio: 16 / 10;
-        object-fit: cover;
+        height: auto;
+        aspect-ratio: auto;
+        object-fit: contain;
+        background: #111;
     }
-
 
 /* ==========================================
     PROJECT CONTENT
     ========================================== */
-
 .featured-project-content {
     padding-right: 10px;
 }
@@ -239,7 +242,7 @@
     ========================================== */
 
 .gallery-overlay {
-     pointer-events: none;
+    pointer-events: none;
     position: absolute;
     inset: 0;
     display: flex;
@@ -249,8 +252,6 @@
     opacity: 0;
     transition: opacity 0.35s ease;
 }
-
-
 
     .gallery-overlay div {
         transform: translateY(15px);
@@ -669,4 +670,3 @@ html {
         font-size: 13px;
         margin-top: 12px;
     }
-}
