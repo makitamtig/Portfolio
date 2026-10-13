@@ -1,0 +1,29 @@
+﻿
+
+    .trust-bar
+
+{
+    background: var(--white);
+    padding: 30px 0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.trust-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trust-bar span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-light);
+    transition: var(--transition);
+}
+
+    .trust-bar span:hover {
+        color: var(--primary);
+    }
