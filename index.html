@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 
 <html lang="en">
@@ -160,13 +160,10 @@
 
 
 
-         
-
-
             </div>
 
 
-        </div>
+       
 
     </section>
 
@@ -188,36 +185,9 @@
 
     </div>
 
+   
 
-
-    <!-- ==========================================
-                     TRUST BAR
-    ========================================== -->
-
-    <!--<section class="trust-bar">
-
-        <div class="container">
-
-            <span>ASP.NET Core</span>
-
-            <span>C#</span>
-
-            <span>MySQL</span>
-
-            <span>JavaScript</span>
-
-            <span>Bootstrap</span>
-
-            <span>Stripe</span>
-
-            <span>PayPal</span>
-
-        </div>
-
-    </section>-->
-
-
-
+  
 
 
     <!-- ==========================================
@@ -845,1146 +815,1129 @@
 
                 </div>
 
-            </footer>     <script>
+            </footer>
 
-         document.addEventListener("DOMContentLoaded", function () {
 
-             /* =========================================================
-                PORTFOLIO PROJECT DATA
-                ========================================================= */
+            <!-- ==========================================
+         PORTFOLIO IMAGE LIGHTBOX
+    =========================================== -->
 
-             const projects = [
+            <script>
 
-                 /* =====================================================
-                    PROJECT 01
-                    ===================================================== */
+                document.addEventListener("DOMContentLoaded", function () {
 
-                 {
-                     id: "jewelry-platform",
+                    /* =========================================================
+                       PORTFOLIO PROJECT DATA
+                       ========================================================= */
 
-                     number: "01",
+                    const projects = [
 
-                     category: "Full-Stack E-Commerce",
+                        /* =====================================================
+                           PROJECT 01
+                           ===================================================== */
 
-                     title: "Jewelry Management & E-Commerce Platform",
+                        {
+                            id: "jewelry-platform",
 
-                     description:
-                         "A complete business management and e-commerce platform developed to manage jewelry products, variants, inventory, customers, orders and online sales from one system.",
+                            number: "01",
 
+                            category: "Full-Stack E-Commerce",
 
-                     /* =================================================
-                        VIDEOS
+                            title: "Jewelry Management & E-Commerce Platform",
 
-                        You can add MORE than one video here.
-                        ================================================= */
+                            description:
+                                "A complete business management and e-commerce platform developed to manage jewelry products, variants, inventory, customers, orders and online sales from one system.",
 
-                     //videos: [
 
-                     //    "images/portfolio/latest-video.mp4"
+                           
 
-                     //    // Example:
-                     //    // "images/portfolio/jewelry-admin-demo.mp4",
-                     //    // "images/portfolio/jewelry-storefront-demo.mp4"
+                            /* =================================================
+                               VIDEO GALLERY
+                               One main video + unlimited additional videos
+                               ================================================= */
 
-                     //],
+                            videoGallery: {
+                                main: {
+                                    title: "Complete Platform Walkthrough",
+                                    src: "images/portfolio/jewelry/latest-video.mp4",
+                                    thumbnail: "images/portfolio/main.png",
+                                    description: "Explore the main jewelry website and its features."
+                                },
 
+                                additional: [
+                                    {
+                                        title: "Admin Dashboard",
+                                        src: "images/portfolio/jewelry/latest-video.mp4",
+                                        /* src: "images/portfolio/jewelry/admin-demo.mp4",*/
+                                        thumbnail: "images/portfolio/main.png",
+                                        description: "Explore the administration dashboard."
+                                    },
+                                    {
+                                        title: "Online Store",
+                                        src: "images/portfolio/jewelry/storefront-demo.mp4",
+                                        thumbnail: "images/portfolio/rings.png",
+                                        description: "Explore the customer shopping experience."
+                                    }
+                                ]
+                            },
+
+
+                            /* =================================================
+                               TECHNOLOGIES
+                               ================================================= */
+
+                            technologies: [
+
+                                "ASP.NET Core",
+                                "C#",
+                                "MySQL",
+                                "JavaScript",
+                                "Bootstrap",
+                                "Stripe",
+                                "PayPal"
+
+                            ],
+
+
+                            /* =================================================
+                               PROJECT FEATURES
+                               ================================================= */
+
+                            features: [
+
+                                {
+                                    icon: "fa-solid fa-boxes-stacked",
+                                    title: "Inventory",
+                                    description: "Product & stock management"
+                                },
+
+                                {
+                                    icon: "fa-solid fa-cart-shopping",
+                                    title: "E-Commerce",
+                                    description: "Shopping & order management"
+                                },
+
+                                {
+                                    icon: "fa-solid fa-users",
+                                    title: "Customers",
+                                    description: "Accounts & order history"
+                                },
+
+                                {
+                                    icon: "fa-solid fa-chart-line",
+                                    title: "Business Tools",
+                                    description: "Management & reporting"
+                                }
+
+                            ],
+
+
+                            /* =================================================
+                               SCREENSHOTS
+                               ================================================= */
+
+                            screenshots: [
+
+                                {
+                                    image: "images/portfolio/main.png",
+                                    title: "Business Dashboard",
+                                    description:
+                                        "A centralized dashboard providing an overview of the platform and its core business operations."
+                                },
+
+                                {
+                                    image: "images/portfolio/manageproducts.png",
+                                    title: "Product Management",
+                                    description:
+                                        "Manage jewelry products, variants and product information from a centralized management interface."
+                                },
+
+                                {
+                                    image: "images/portfolio/Categories.png",
+                                    title: "Product Categories",
+                                    description:
+                                        "Browse products through organized categories or quickly discover items using the search experience."
+                                },
+
+                                {
+                                    image: "images/portfolio/rings.png",
+                                    title: "Ring Collection",
+                                    description:
+                                        "Explore the available ring collection and browse products offered through the jewelry storefront."
+                                },
+
+                                {
+                                    image: "images/portfolio/customization.png",
+                                    title: "Product Customization",
+                                    description:
+                                        "A dedicated customization experience that allows customers to personalize their jewelry selections."
+                                },
+
+                                {
+                                    image: "images/portfolio/RingCustomization.png",
+                                    title: "Ring Customization",
+                                    description:
+                                        "Customers can explore ring customization options and choose their preferred configuration."
+                                },
+
+                                {
+                                    image: "images/portfolio/OtherCustomization.png",
+                                    title: "Additional Customization",
+                                    description:
+                                        "Additional customization forms provide more ways to personalize jewelry products."
+                                },
+
+                                {
+                                    image: "images/portfolio/Braceletcustomization.png",
+                                    title: "Bracelet Customization",
+                                    description:
+                                        "A dedicated experience designed for creating personalized bracelet selections."
+                                },
+
+                                {
+                                    image: "images/portfolio/Bestseller.png",
+                                    title: "Featured & Best Sellers",
+                                    description:
+                                        "Highlighted product sliders showcase best sellers, promotional products and other featured items."
+                                },
+
+                                {
+                                    image: "images/portfolio/filtereddetails.png",
+                                    title: "Advanced Product Filtering",
+                                    description:
+                                        "Customers can filter by product, category, color, size and stone color to find the right item quickly."
+                                },
+
+                                {
+                                    image: "images/portfolio/Shoppingcart.png",
+                                    title: "Shopping Cart",
+                                    description:
+                                        "Customers can review selected products, manage their cart and prepare their order before checkout."
+                                },
 
+                                {
+                                    image: "images/portfolio/paymentpage.png",
+                                    title: "Secure Payment Experience",
+                                    description:
+                                        "A dedicated checkout and payment experience designed to complete customer purchases smoothly."
+                                },
 
-                     /* =================================================
-                        VIDEO GALLERY
-                        One main video + unlimited additional videos
-                        ================================================= */
+                                {
+                                    image: "images/portfolio/Ordermanagmentpage.png",
+                                    title: "Order Management",
+                                    description:
+                                        "Manage customer orders and monitor order information through the platform's order-management interface."
+                                },
 
-                     videoGallery: {
-                         main: {
-                             title: "Complete Platform Walkthrough",
-                             src: "images/portfolio/jewelry/latest-video.mp4",
-                             thumbnail: "images/portfolio/main.png",
-                             description: "Explore the main jewelry website and its features."
-                         },
+                                {
+                                    image: "images/portfolio/Restocking.png",
+                                    title: "Product Restocking",
+                                    description:
+                                        "When an item is out of stock, the platform provides a simple way to reorder it and continue through payment."
+                                }
 
-                         additional: [
-                             {
-                                 title: "Admin Dashboard",
-                                 src: "images/portfolio/jewelry/latest-video.mp4",
-                                 /* src: "images/portfolio/jewelry/admin-demo.mp4",*/
-                                 thumbnail: "images/portfolio/main.png",
-                                 description: "Explore the administration dashboard."
-                             },
-                             {
-                                 title: "Online Store",
-                                 src: "images/portfolio/jewelry/storefront-demo.mp4",
-                                 thumbnail: "images/portfolio/rings.png",
-                                 description: "Explore the customer shopping experience."
-                             }
-                         ]
-                     },
+                            ]
 
+                        },
 
-                     /* =================================================
-                        TECHNOLOGIES
-                        ================================================= */
-
-                     technologies: [
-
-                         "ASP.NET Core",
-                         "C#",
-                         "MySQL",
-                         "JavaScript",
-                         "Bootstrap",
-                         "Stripe",
-                         "PayPal"
-
-                     ],
-
-
-                     /* =================================================
-                        PROJECT FEATURES
-                        ================================================= */
-
-                     features: [
-
-                         {
-                             icon: "fa-solid fa-boxes-stacked",
-                             title: "Inventory",
-                             description: "Product & stock management"
-                         },
-
-                         {
-                             icon: "fa-solid fa-cart-shopping",
-                             title: "E-Commerce",
-                             description: "Shopping & order management"
-                         },
-
-                         {
-                             icon: "fa-solid fa-users",
-                             title: "Customers",
-                             description: "Accounts & order history"
-                         },
-
-                         {
-                             icon: "fa-solid fa-chart-line",
-                             title: "Business Tools",
-                             description: "Management & reporting"
-                         }
-
-                     ],
-
-
-                     /* =================================================
-                        SCREENSHOTS
-                        ================================================= */
-
-                     screenshots: [
-
-                         {
-                             image: "images/portfolio/main.png",
-                             title: "Business Dashboard",
-                             description:
-                                 "A centralized dashboard providing an overview of the platform and its core business operations."
-                         },
-
-                         {
-                             image: "images/portfolio/manageproducts.png",
-                             title: "Product Management",
-                             description:
-                                 "Manage jewelry products, variants and product information from a centralized management interface."
-                         },
-
-                         {
-                             image: "images/portfolio/Categories.png",
-                             title: "Product Categories",
-                             description:
-                                 "Browse products through organized categories or quickly discover items using the search experience."
-                         },
-
-                         {
-                             image: "images/portfolio/rings.png",
-                             title: "Ring Collection",
-                             description:
-                                 "Explore the available ring collection and browse products offered through the jewelry storefront."
-                         },
-
-                         {
-                             image: "images/portfolio/customization.png",
-                             title: "Product Customization",
-                             description:
-                                 "A dedicated customization experience that allows customers to personalize their jewelry selections."
-                         },
-
-                         {
-                             image: "images/portfolio/RingCustomization.png",
-                             title: "Ring Customization",
-                             description:
-                                 "Customers can explore ring customization options and choose their preferred configuration."
-                         },
-
-                         {
-                             image: "images/portfolio/OtherCustomization.png",
-                             title: "Additional Customization",
-                             description:
-                                 "Additional customization forms provide more ways to personalize jewelry products."
-                         },
-
-                         {
-                             image: "images/portfolio/Braceletcustomization.png",
-                             title: "Bracelet Customization",
-                             description:
-                                 "A dedicated experience designed for creating personalized bracelet selections."
-                         },
-
-                         {
-                             image: "images/portfolio/Bestseller.png",
-                             title: "Featured & Best Sellers",
-                             description:
-                                 "Highlighted product sliders showcase best sellers, promotional products and other featured items."
-                         },
-
-                         {
-                             image: "images/portfolio/filtereddetails.png",
-                             title: "Advanced Product Filtering",
-                             description:
-                                 "Customers can filter by product, category, color, size and stone color to find the right item quickly."
-                         },
-
-                         {
-                             image: "images/portfolio/Shoppingcart.png",
-                             title: "Shopping Cart",
-                             description:
-                                 "Customers can review selected products, manage their cart and prepare their order before checkout."
-                         },
-
-                         {
-                             image: "images/portfolio/paymentpage.png",
-                             title: "Secure Payment Experience",
-                             description:
-                                 "A dedicated checkout and payment experience designed to complete customer purchases smoothly."
-                         },
-
-                         {
-                             image: "images/portfolio/Ordermanagmentpage.png",
-                             title: "Order Management",
-                             description:
-                                 "Manage customer orders and monitor order information through the platform's order-management interface."
-                         },
-
-                         {
-                             image: "images/portfolio/Restocking.png",
-                             title: "Product Restocking",
-                             description:
-                                 "When an item is out of stock, the platform provides a simple way to reorder it and continue through payment."
-                         }
 
-                     ]
+                     
+                        {
+                            id: "project-two",
 
-                 },
+                            number: "02",
 
+                            category: "Business Software",
 
-                 /* =====================================================
-                    PROJECT 02 — EXAMPLE / FUTURE PROJECT
+                            title: "Your Next Software Project",
 
-                    You can DELETE this object for now.
-                    When your next project is ready, replace the
-                    information with the real project.
-                    ===================================================== */
+                            description:
+                                "A professional business solution designed to solve a specific business need.",
 
-                 {
-                     id: "project-two",
 
-                     number: "02",
+                            videos: [
 
-                     category: "Business Software",
+                                // Add video when ready:
+                                // "images/portfolio/project-two/demo.mp4"
 
-                     title: "Your Next Software Project",
+                            ],
 
-                     description:
-                         "A professional business solution designed to solve a specific business need.",
 
+                            technologies: [
 
-                     videos: [
+                                "ASP.NET Core",
+                                "C#",
+                                "JavaScript"
 
-                         // Add video when ready:
-                         // "images/portfolio/project-two/demo.mp4"
+                            ],
 
-                     ],
 
+                            features: [
 
-                     technologies: [
+                                {
+                                    icon: "fa-solid fa-chart-line",
+                                    title: "Dashboard",
+                                    description: "Business overview and reporting"
+                                },
 
-                         "ASP.NET Core",
-                         "C#",
-                         "JavaScript"
+                                {
+                                    icon: "fa-solid fa-users",
+                                    title: "Customers",
+                                    description: "Customer management"
+                                },
 
-                     ],
+                                {
+                                    icon: "fa-solid fa-file-lines",
+                                    title: "Reports",
+                                    description: "Business reporting tools"
+                                }
 
+                            ],
 
-                     features: [
 
-                         {
-                             icon: "fa-solid fa-chart-line",
-                             title: "Dashboard",
-                             description: "Business overview and reporting"
-                         },
+                            screenshots: [
 
-                         {
-                             icon: "fa-solid fa-users",
-                             title: "Customers",
-                             description: "Customer management"
-                         },
+                                // Add screenshots when ready:
 
-                         {
-                             icon: "fa-solid fa-file-lines",
-                             title: "Reports",
-                             description: "Business reporting tools"
-                         }
+                                /*
+                                {
+                                    image: "images/portfolio/project-two/dashboard.png",
+                                    title: "Business Dashboard",
+                                    description:
+                                        "A centralized dashboard for managing business operations."
+                                }
+                                */
 
-                     ],
+                            ]
 
+                        }
 
-                     screenshots: [
+                    ];
 
-                         // Add screenshots when ready:
 
-                         /*
-                         {
-                             image: "images/portfolio/project-two/dashboard.png",
-                             title: "Business Dashboard",
-                             description:
-                                 "A centralized dashboard for managing business operations."
-                         }
-                         */
+                    /* =========================================================
+                       PORTFOLIO CONTAINER
+                       ========================================================= */
 
-                     ]
+                    const portfolioContainer =
+                        document.getElementById("portfolioProjects");
 
-                 }
 
-             ];
+                    if (!portfolioContainer) {
+                        return;
+                    }
 
 
-             /* =========================================================
-                PORTFOLIO CONTAINER
-                ========================================================= */
+                    /* =========================================================
+                       CREATE PROJECT HTML
+                       ========================================================= */
 
-             const portfolioContainer =
-                 document.getElementById("portfolioProjects");
+                    function createProject(project, projectIndex) {
 
+                        const projectElement = document.createElement("article");
 
-             if (!portfolioContainer) {
-                 return;
-             }
+                        projectElement.className = "portfolio-project";
 
+                        projectElement.dataset.projectId = project.id;
 
-             /* =========================================================
-                CREATE PROJECT HTML
-                ========================================================= */
 
-             function createProject(project, projectIndex) {
+                        /* =====================================================
+                           VIDEOS
+                           ===================================================== */
 
-                 const projectElement = document.createElement("article");
+                        let videosHTML = "";
 
-                 projectElement.className = "portfolio-project";
+                        if (project.videos && project.videos.length > 0) {
 
-                 projectElement.dataset.projectId = project.id;
+                            videosHTML = `
 
+                                            <div class="project-videos">
 
-                 /* =====================================================
-                    VIDEOS
-                    ===================================================== */
+                                                ${project.videos.map((video, index) => `
 
-                 let videosHTML = "";
+                                                    <div class="project-video">
 
-                 if (project.videos && project.videos.length > 0) {
+                                                        <video
+                                                            controls
+                                                            preload="metadata"
+                                                            playsinline>
 
-                     videosHTML = `
+                                                            <source
+                                                                src="${video}"
+                                                                type="video/mp4">
 
-                                     <div class="project-videos">
+                                                            Your browser does not support
+                                                            the video tag.
 
-                                         ${project.videos.map((video, index) => `
+                                                        </video>
 
-                                             <div class="project-video">
+                                                    </div>
 
-                                                 <video
-                                                     controls
-                                                     preload="metadata"
-                                                     playsinline>
+                                                `).join("")}
 
-                                                     <source
-                                                         src="${video}"
-                                                         type="video/mp4">
+                                            </div>
 
-                                                     Your browser does not support
-                                                     the video tag.
+                                        `;
 
-                                                 </video>
+                        }
 
-                                             </div>
 
-                                         `).join("")}
+                        /* =====================================================
+                           FEATURES
+                           ===================================================== */
 
-                                     </div>
+                        const featuresHTML =
+                            project.features.map(feature => `
 
-                                 `;
+                                            <div class="highlight">
 
-                 }
+                                                <i class="${feature.icon}"></i>
 
+                                                <div>
 
-                 /* =====================================================
-                    FEATURES
-                    ===================================================== */
+                                                    <strong>
+                                                        ${feature.title}
+                                                    </strong>
 
-                 const featuresHTML =
-                     project.features.map(feature => `
+                                                    <span>
+                                                        ${feature.description}
+                                                    </span>
 
-                                     <div class="highlight">
+                                                </div>
 
-                                         <i class="${feature.icon}"></i>
+                                            </div>
 
-                                         <div>
+                                        `).join("");
 
-                                             <strong>
-                                                 ${feature.title}
-                                             </strong>
 
-                                             <span>
-                                                 ${feature.description}
-                                             </span>
+                        /* =====================================================
+                           TECHNOLOGIES
+                           ===================================================== */
 
-                                         </div>
+                        const technologiesHTML =
+                            project.technologies.map(technology => `
 
-                                     </div>
+                                            <span>
+                                                ${technology}
+                                            </span>
 
-                                 `).join("");
+                                        `).join("");
 
 
-                 /* =====================================================
-                    TECHNOLOGIES
-                    ===================================================== */
+                        /* =====================================================
+                           SCREENSHOTS
+                           ===================================================== */
 
-                 const technologiesHTML =
-                     project.technologies.map(technology => `
+                        let showcaseHTML = "";
 
-                                     <span>
-                                         ${technology}
-                                     </span>
+                        if (project.screenshots.length > 0) {
 
-                                 `).join("");
+                            const firstScreen = project.screenshots[0];
 
 
-                 /* =====================================================
-                    SCREENSHOTS
-                    ===================================================== */
+                            const thumbnailsHTML =
+                                project.screenshots.map((screen, index) => `
 
-                 let showcaseHTML = "";
+                                                <button
+                                                    type="button"
+                                                    class="thumbnail-button ${index === 0 ? "active" : ""}"
+                                                    data-project="${project.id}"
+                                                    data-screen="${index}"
+                                                    aria-label="Show ${screen.title}">
 
-                 if (project.screenshots.length > 0) {
+                                                    <img
+                                                        src="${screen.image}"
+                                                        alt="">
 
-                     const firstScreen = project.screenshots[0];
+                                                    <span>
+                                                        ${String(index + 1).padStart(2, "0")}
+                                                    </span>
 
+                                                </button>
 
-                     const thumbnailsHTML =
-                         project.screenshots.map((screen, index) => `
+                                            `).join("");
 
-                                         <button
-                                             type="button"
-                                             class="thumbnail-button ${index === 0 ? "active" : ""}"
-                                             data-project="${project.id}"
-                                             data-screen="${index}"
-                                             aria-label="Show ${screen.title}">
 
-                                             <img
-                                                 src="${screen.image}"
-                                                 alt="">
+                            showcaseHTML = `
 
-                                             <span>
-                                                 ${String(index + 1).padStart(2, "0")}
-                                             </span>
+                                            <!-- ==========================================
+                                                 PROJECT SCREENSHOTS
+                                            =========================================== -->
 
-                                         </button>
+                                            <section
+                                                class="project-showcase"
+                                                data-showcase="${project.id}"
+                                                aria-label="${project.title} screenshots">
 
-                                     `).join("");
 
+                                                <div class="showcase-heading">
 
-                     showcaseHTML = `
+                                                    <div>
 
-                                     <!-- ==========================================
-                                          PROJECT SCREENSHOTS
-                                     =========================================== -->
+                                                        <span class="eyebrow">
+                                                            System Screens
+                                                        </span>
 
-                                     <section
-                                         class="project-showcase"
-                                         data-showcase="${project.id}"
-                                         aria-label="${project.title} screenshots">
+                                                        <h3>
+                                                            Explore the Platform
+                                                        </h3>
 
+                                                    </div>
 
-                                         <div class="showcase-heading">
 
-                                             <div>
+                                                    <span
+                                                        class="screen-counter"
+                                                        data-counter>
 
-                                                 <span class="eyebrow">
-                                                     System Screens
-                                                 </span>
+                                                        01 / ${String(project.screenshots.length).padStart(2, "0")}
 
-                                                 <h3>
-                                                     Explore the Platform
-                                                 </h3>
+                                                    </span>
 
-                                             </div>
+                                                </div>
 
 
-                                             <span
-                                                 class="screen-counter"
-                                                 data-counter>
+                                                <div class="showcase-main">
 
-                                                 01 / ${String(project.screenshots.length).padStart(2, "0")}
 
-                                             </span>
+                                                    <button
+                                                        class="showcase-image-button"
+                                                        type="button"
+                                                        data-open-lightbox
+                                                        aria-label="Open screenshot in full screen">
 
-                                         </div>
 
+                                                        <img
+                                                            data-main-image
+                                                            src="${firstScreen.image}"
+                                                            alt="${firstScreen.title}">
 
-                                         <div class="showcase-main">
 
+                                                        <span class="expand-image">
 
-                                             <button
-                                                 class="showcase-image-button"
-                                                 type="button"
-                                                 data-open-lightbox
-                                                 aria-label="Open screenshot in full screen">
+                                                            <i class="fa-solid fa-expand"></i>
 
+                                                            View full screen
 
-                                                 <img
-                                                     data-main-image
-                                                     src="${firstScreen.image}"
-                                                     alt="${firstScreen.title}">
+                                                        </span>
 
+                                                    </button>
 
-                                                 <span class="expand-image">
 
-                                                     <i class="fa-solid fa-expand"></i>
+                                                    <div class="showcase-details">
 
-                                                     View full screen
 
-                                                 </span>
+                                                        <span data-screen-number>
+                                                            01
+                                                        </span>
 
-                                             </button>
 
+                                                        <h4 data-screen-title>
+                                                            ${firstScreen.title}
+                                                        </h4>
 
-                                             <div class="showcase-details">
 
+                                                        <p data-screen-description>
+                                                            ${firstScreen.description}
+                                                        </p>
 
-                                                 <span data-screen-number>
-                                                     01
-                                                 </span>
 
+                                                        <div class="showcase-navigation">
 
-                                                 <h4 data-screen-title>
-                                                     ${firstScreen.title}
-                                                 </h4>
 
+                                                            <button
+                                                                type="button"
+                                                                data-previous-screen
+                                                                aria-label="Previous screen">
 
-                                                 <p data-screen-description>
-                                                     ${firstScreen.description}
-                                                 </p>
+                                                                <i class="fa-solid fa-arrow-left"></i>
 
+                                                            </button>
 
-                                                 <div class="showcase-navigation">
 
+                                                            <button
+                                                                type="button"
+                                                                data-next-screen>
 
-                                                     <button
-                                                         type="button"
-                                                         data-previous-screen
-                                                         aria-label="Previous screen">
+                                                                Next screen
 
-                                                         <i class="fa-solid fa-arrow-left"></i>
+                                                                <i class="fa-solid fa-arrow-right"></i>
 
-                                                     </button>
+                                                            </button>
 
 
-                                                     <button
-                                                         type="button"
-                                                         data-next-screen>
+                                                        </div>
 
-                                                         Next screen
+                                                    </div>
 
-                                                         <i class="fa-solid fa-arrow-right"></i>
+                                                </div>
 
-                                                     </button>
 
+                                                <div
+                                                    class="screenshot-thumbnails"
+                                                    data-thumbnails>
 
-                                                 </div>
+                                                    ${thumbnailsHTML}
 
-                                             </div>
+                                                </div>
 
-                                         </div>
 
+                                            </section>
 
-                                         <div
-                                             class="screenshot-thumbnails"
-                                             data-thumbnails>
 
-                                             ${thumbnailsHTML}
+                                            <!-- ==========================================
+                                                 FULL SCREEN LIGHTBOX
+                                            =========================================== -->
 
-                                         </div>
+                                            <div
+                                                class="project-lightbox"
+                                                data-lightbox
+                                                aria-hidden="true">
 
 
-                                     </section>
+                                                <button
+                                                    class="lightbox-close"
+                                                    type="button"
+                                                    data-close-lightbox
+                                                    aria-label="Close full-screen image">
 
+                                                    <i class="fa-solid fa-xmark"></i>
 
-                                     <!-- ==========================================
-                                          FULL SCREEN LIGHTBOX
-                                     =========================================== -->
+                                                </button>
 
-                                     <div
-                                         class="project-lightbox"
-                                         data-lightbox
-                                         aria-hidden="true">
 
+                                                <button
+                                                    class="lightbox-arrow lightbox-previous"
+                                                    type="button"
+                                                    data-lightbox-previous
+                                                    aria-label="Previous screenshot">
 
-                                         <button
-                                             class="lightbox-close"
-                                             type="button"
-                                             data-close-lightbox
-                                             aria-label="Close full-screen image">
+                                                    <i class="fa-solid fa-chevron-left"></i>
 
-                                             <i class="fa-solid fa-xmark"></i>
+                                                </button>
 
-                                         </button>
 
+                                                <div class="lightbox-content">
 
-                                         <button
-                                             class="lightbox-arrow lightbox-previous"
-                                             type="button"
-                                             data-lightbox-previous
-                                             aria-label="Previous screenshot">
 
-                                             <i class="fa-solid fa-chevron-left"></i>
+                                                    <img
+                                                        data-lightbox-image
+                                                        src="${firstScreen.image}"
+                                                        alt="${firstScreen.title}">
 
-                                         </button>
 
+                                                    <div class="lightbox-caption">
 
-                                         <div class="lightbox-content">
 
+                                                        <span data-lightbox-counter>
+                                                            01 / ${String(project.screenshots.length).padStart(2, "0")}
+                                                        </span>
 
-                                             <img
-                                                 data-lightbox-image
-                                                 src="${firstScreen.image}"
-                                                 alt="${firstScreen.title}">
 
+                                                        <h4 data-lightbox-title>
+                                                            ${firstScreen.title}
+                                                        </h4>
 
-                                             <div class="lightbox-caption">
 
+                                                    </div>
 
-                                                 <span data-lightbox-counter>
-                                                     01 / ${String(project.screenshots.length).padStart(2, "0")}
-                                                 </span>
+                                                </div>
 
 
-                                                 <h4 data-lightbox-title>
-                                                     ${firstScreen.title}
-                                                 </h4>
+                                                <button
+                                                    class="lightbox-arrow lightbox-next"
+                                                    type="button"
+                                                    data-lightbox-next
+                                                    aria-label="Next screenshot">
 
+                                                    <i class="fa-solid fa-chevron-right"></i>
 
-                                             </div>
+                                                </button>
 
-                                         </div>
 
+                                            </div>
 
-                                         <button
-                                             class="lightbox-arrow lightbox-next"
-                                             type="button"
-                                             data-lightbox-next
-                                             aria-label="Next screenshot">
+                                        `;
 
-                                             <i class="fa-solid fa-chevron-right"></i>
+                        }
 
-                                         </button>
 
+                        /* =====================================================
+                           COMPLETE PROJECT
+                           ===================================================== */
 
-                                     </div>
+                        projectElement.innerHTML = `
 
-                                 `;
+                                        <!-- ==============================================
+                                             PROJECT HEADER
+                                        =============================================== -->
 
-                 }
+                                        <div class="featured-project">
 
 
-                 /* =====================================================
-                    COMPLETE PROJECT
-                    ===================================================== */
+                                            ${videosHTML}
 
-                 projectElement.innerHTML = `
 
-                                 <!-- ==============================================
-                                      PROJECT HEADER
-                                 =============================================== -->
+                                            <div class="featured-project-content">
 
-                                 <div class="featured-project">
 
+                                                <span class="project-number">
 
-                                     ${videosHTML}
+                                                    ${project.number}
+                                                    / ${project.category}
 
+                                                </span>
 
-                                     <div class="featured-project-content">
 
+                                                <h3>
 
-                                         <span class="project-number">
+                                                    ${project.title}
 
-                                             ${project.number}
-                                             / ${project.category}
+                                                </h3>
 
-                                         </span>
 
+                                                <p class="project-description">
 
-                                         <h3>
+                                                    ${project.description}
 
-                                             ${project.title}
+                                                </p>
 
-                                         </h3>
 
+                                                <div class="project-highlights">
 
-                                         <p class="project-description">
+                                                    ${featuresHTML}
 
-                                             ${project.description}
+                                                </div>
 
-                                         </p>
 
+                                                <div class="project-tech">
 
-                                         <div class="project-highlights">
+                                                    ${technologiesHTML}
 
-                                             ${featuresHTML}
+                                                </div>
 
-                                         </div>
 
+                                            </div>
 
-                                         <div class="project-tech">
+                                        </div>
 
-                                             ${technologiesHTML}
 
-                                         </div>
+                                        ${showcaseHTML}
 
 
-                                     </div>
+                                    `;
 
-                                 </div>
 
+                        portfolioContainer.appendChild(projectElement);
 
-                                 ${showcaseHTML}
 
+                        initializeProjectGallery(
+                            project,
+                            projectElement
+                        );
 
-                             `;
+                    }
 
 
-                 portfolioContainer.appendChild(projectElement);
+                    /* =========================================================
+                       GALLERY / LIGHTBOX SYSTEM
+                       ========================================================= */
 
+                    function initializeProjectGallery(
+                        project,
+                        projectElement
+                    ) {
 
-                 initializeProjectGallery(
-                     project,
-                     projectElement
-                 );
+                        if (
+                            !project.screenshots ||
+                            project.screenshots.length === 0
+                        ) {
+                            return;
+                        }
 
-             }
 
+                        let currentIndex = 0;
 
-             /* =========================================================
-                GALLERY / LIGHTBOX SYSTEM
-                ========================================================= */
 
-             function initializeProjectGallery(
-                 project,
-                 projectElement
-             ) {
+                        const showcase =
+                            projectElement.querySelector(
+                                "[data-showcase]"
+                            );
 
-                 if (
-                     !project.screenshots ||
-                     project.screenshots.length === 0
-                 ) {
-                     return;
-                 }
 
+                        const mainImage =
+                            showcase.querySelector(
+                                "[data-main-image]"
+                            );
 
-                 let currentIndex = 0;
 
+                        const screenNumber =
+                            showcase.querySelector(
+                                "[data-screen-number]"
+                            );
 
-                 const showcase =
-                     projectElement.querySelector(
-                         "[data-showcase]"
-                     );
 
+                        const screenCounter =
+                            showcase.querySelector(
+                                "[data-counter]"
+                            );
 
-                 const mainImage =
-                     showcase.querySelector(
-                         "[data-main-image]"
-                     );
 
+                        const screenTitle =
+                            showcase.querySelector(
+                                "[data-screen-title]"
+                            );
 
-                 const screenNumber =
-                     showcase.querySelector(
-                         "[data-screen-number]"
-                     );
 
+                        const screenDescription =
+                            showcase.querySelector(
+                                "[data-screen-description]"
+                            );
 
-                 const screenCounter =
-                     showcase.querySelector(
-                         "[data-counter]"
-                     );
 
+                        const thumbnails =
+                            showcase.querySelectorAll(
+                                ".thumbnail-button"
+                            );
 
-                 const screenTitle =
-                     showcase.querySelector(
-                         "[data-screen-title]"
-                     );
 
+                        const lightbox =
+                            projectElement.querySelector(
+                                "[data-lightbox]"
+                            );
 
-                 const screenDescription =
-                     showcase.querySelector(
-                         "[data-screen-description]"
-                     );
 
+                        const lightboxImage =
+                            lightbox.querySelector(
+                                "[data-lightbox-image]"
+                            );
 
-                 const thumbnails =
-                     showcase.querySelectorAll(
-                         ".thumbnail-button"
-                     );
 
+                        const lightboxCounter =
+                            lightbox.querySelector(
+                                "[data-lightbox-counter]"
+                            );
 
-                 const lightbox =
-                     projectElement.querySelector(
-                         "[data-lightbox]"
-                     );
 
+                        const lightboxTitle =
+                            lightbox.querySelector(
+                                "[data-lightbox-title]"
+                            );
 
-                 const lightboxImage =
-                     lightbox.querySelector(
-                         "[data-lightbox-image]"
-                     );
 
+                        /* =====================================================
+                           FORMAT NUMBER
+                        ===================================================== */
 
-                 const lightboxCounter =
-                     lightbox.querySelector(
-                         "[data-lightbox-counter]"
-                     );
+                        function formatNumber(number) {
 
+                            return String(number).padStart(2, "0");
 
-                 const lightboxTitle =
-                     lightbox.querySelector(
-                         "[data-lightbox-title]"
-                     );
+                        }
 
 
-                 /* =====================================================
-                    FORMAT NUMBER
-                 ===================================================== */
+                        /* =====================================================
+                           SHOW SCREEN
+                        ===================================================== */
 
-                 function formatNumber(number) {
+                        function showScreen(index) {
 
-                     return String(number).padStart(2, "0");
+                            currentIndex =
+                                (index + project.screenshots.length)
+                                % project.screenshots.length;
 
-                 }
 
+                            const screen =
+                                project.screenshots[currentIndex];
 
-                 /* =====================================================
-                    SHOW SCREEN
-                 ===================================================== */
 
-                 function showScreen(index) {
+                            const number =
+                                formatNumber(currentIndex + 1);
 
-                     currentIndex =
-                         (index + project.screenshots.length)
-                         % project.screenshots.length;
 
+                            const counterText =
+                                number +
+                                " / " +
+                                formatNumber(project.screenshots.length);
 
-                     const screen =
-                         project.screenshots[currentIndex];
 
+                            mainImage.src =
+                                screen.image;
 
-                     const number =
-                         formatNumber(currentIndex + 1);
 
+                            mainImage.alt =
+                                screen.title;
 
-                     const counterText =
-                         number +
-                         " / " +
-                         formatNumber(project.screenshots.length);
 
+                            screenNumber.textContent =
+                                number;
 
-                     mainImage.src =
-                         screen.image;
 
+                            screenCounter.textContent =
+                                counterText;
 
-                     mainImage.alt =
-                         screen.title;
 
+                            screenTitle.textContent =
+                                screen.title;
 
-                     screenNumber.textContent =
-                         number;
 
+                            screenDescription.textContent =
+                                screen.description;
 
-                     screenCounter.textContent =
-                         counterText;
 
+                            lightboxImage.src =
+                                screen.image;
 
-                     screenTitle.textContent =
-                         screen.title;
 
+                            lightboxImage.alt =
+                                screen.title;
 
-                     screenDescription.textContent =
-                         screen.description;
 
+                            lightboxCounter.textContent =
+                                counterText;
 
-                     lightboxImage.src =
-                         screen.image;
 
+                            lightboxTitle.textContent =
+                                screen.title;
 
-                     lightboxImage.alt =
-                         screen.title;
 
+                            thumbnails.forEach(
+                                (button, buttonIndex) => {
 
-                     lightboxCounter.textContent =
-                         counterText;
+                                    button.classList.toggle(
+                                        "active",
+                                        buttonIndex === currentIndex
+                                    );
 
+                                }
+                            );
 
-                     lightboxTitle.textContent =
-                         screen.title;
 
+                            const activeThumbnail =
+                                showcase.querySelector(
+                                    ".thumbnail-button.active"
+                                );
 
-                     thumbnails.forEach(
-                         (button, buttonIndex) => {
 
-                             button.classList.toggle(
-                                 "active",
-                                 buttonIndex === currentIndex
-                             );
+                            if (activeThumbnail) {
 
-                         }
-                     );
+                                activeThumbnail.scrollIntoView({
 
+                                    behavior: "smooth",
 
-                     const activeThumbnail =
-                         showcase.querySelector(
-                             ".thumbnail-button.active"
-                         );
+                                    block: "nearest",
 
+                                    inline: "center"
 
-                     if (activeThumbnail) {
+                                });
 
-                         activeThumbnail.scrollIntoView({
+                            }
 
-                             behavior: "smooth",
+                        }
 
-                             block: "nearest",
 
-                             inline: "center"
+                        /* =====================================================
+                           OPEN LIGHTBOX
+                        ===================================================== */
 
-                         });
+                        function openLightbox() {
 
-                     }
+                            lightbox.classList.add(
+                                "is-open"
+                            );
 
-                 }
 
+                            lightbox.setAttribute(
+                                "aria-hidden",
+                                "false"
+                            );
 
-                 /* =====================================================
-                    OPEN LIGHTBOX
-                 ===================================================== */
 
-                 function openLightbox() {
+                            document.body.style.overflow =
+                                "hidden";
 
-                     lightbox.classList.add(
-                         "is-open"
-                     );
+                        }
 
 
-                     lightbox.setAttribute(
-                         "aria-hidden",
-                         "false"
-                     );
+                        /* =====================================================
+                           CLOSE LIGHTBOX
+                        ===================================================== */
 
+                        function closeLightbox() {
 
-                     document.body.style.overflow =
-                         "hidden";
+                            lightbox.classList.remove(
+                                "is-open"
+                            );
 
-                 }
 
+                            lightbox.setAttribute(
+                                "aria-hidden",
+                                "true"
+                            );
 
-                 /* =====================================================
-                    CLOSE LIGHTBOX
-                 ===================================================== */
 
-                 function closeLightbox() {
+                            document.body.style.overflow =
+                                "";
 
-                     lightbox.classList.remove(
-                         "is-open"
-                     );
+                        }
 
 
-                     lightbox.setAttribute(
-                         "aria-hidden",
-                         "true"
-                     );
+                        /* =====================================================
+                           BUTTONS
+                        ===================================================== */
 
+                        showcase
+                            .querySelector("[data-previous-screen]")
+                            .addEventListener(
+                                "click",
+                                () => showScreen(currentIndex - 1)
+                            );
 
-                     document.body.style.overflow =
-                         "";
 
-                 }
+                        showcase
+                            .querySelector("[data-next-screen]")
+                            .addEventListener(
+                                "click",
+                                () => showScreen(currentIndex + 1)
+                            );
 
 
-                 /* =====================================================
-                    BUTTONS
-                 ===================================================== */
+                        showcase
+                            .querySelector("[data-open-lightbox]")
+                            .addEventListener(
+                                "click",
+                                openLightbox
+                            );
 
-                 showcase
-                     .querySelector("[data-previous-screen]")
-                     .addEventListener(
-                         "click",
-                         () => showScreen(currentIndex - 1)
-                     );
 
+                        lightbox
+                            .querySelector("[data-close-lightbox]")
+                            .addEventListener(
+                                "click",
+                                closeLightbox
+                            );
 
-                 showcase
-                     .querySelector("[data-next-screen]")
-                     .addEventListener(
-                         "click",
-                         () => showScreen(currentIndex + 1)
-                     );
 
+                        lightbox
+                            .querySelector("[data-lightbox-previous]")
+                            .addEventListener(
+                                "click",
+                                () => showScreen(currentIndex - 1)
+                            );
 
-                 showcase
-                     .querySelector("[data-open-lightbox]")
-                     .addEventListener(
-                         "click",
-                         openLightbox
-                     );
 
+                        lightbox
+                            .querySelector("[data-lightbox-next]")
+                            .addEventListener(
+                                "click",
+                                () => showScreen(currentIndex + 1)
+                            );
 
-                 lightbox
-                     .querySelector("[data-close-lightbox]")
-                     .addEventListener(
-                         "click",
-                         closeLightbox
-                     );
 
+                        /* =====================================================
+                           THUMBNAILS
+                        ===================================================== */
 
-                 lightbox
-                     .querySelector("[data-lightbox-previous]")
-                     .addEventListener(
-                         "click",
-                         () => showScreen(currentIndex - 1)
-                     );
+                        thumbnails.forEach(
+                            (button, index) => {
 
+                                button.addEventListener(
+                                    "click",
+                                    () => showScreen(index)
+                                );
 
-                 lightbox
-                     .querySelector("[data-lightbox-next]")
-                     .addEventListener(
-                         "click",
-                         () => showScreen(currentIndex + 1)
-                     );
+                            }
+                        );
 
 
-                 /* =====================================================
-                    THUMBNAILS
-                 ===================================================== */
+                        /* =====================================================
+                           CLICK BACKGROUND TO CLOSE
+                        ===================================================== */
 
-                 thumbnails.forEach(
-                     (button, index) => {
+                        lightbox.addEventListener(
+                            "click",
+                            function (event) {
 
-                         button.addEventListener(
-                             "click",
-                             () => showScreen(index)
-                         );
+                                if (event.target === lightbox) {
 
-                     }
-                 );
+                                    closeLightbox();
 
+                                }
 
-                 /* =====================================================
-                    CLICK BACKGROUND TO CLOSE
-                 ===================================================== */
+                            }
+                        );
 
-                 lightbox.addEventListener(
-                     "click",
-                     function (event) {
 
-                         if (event.target === lightbox) {
+                        /* =====================================================
+                           KEYBOARD CONTROLS
+                        ===================================================== */
 
-                             closeLightbox();
+                        document.addEventListener(
+                            "keydown",
+                            function (event) {
 
-                         }
+                                if (
+                                    !lightbox.classList.contains(
+                                        "is-open"
+                                    )
+                                ) {
+                                    return;
+                                }
 
-                     }
-                 );
 
+                                if (event.key === "Escape") {
 
-                 /* =====================================================
-                    KEYBOARD CONTROLS
-                 ===================================================== */
+                                    closeLightbox();
 
-                 document.addEventListener(
-                     "keydown",
-                     function (event) {
+                                }
 
-                         if (
-                             !lightbox.classList.contains(
-                                 "is-open"
-                             )
-                         ) {
-                             return;
-                         }
 
+                                if (event.key === "ArrowRight") {
 
-                         if (event.key === "Escape") {
+                                    showScreen(
+                                        currentIndex + 1
+                                    );
 
-                             closeLightbox();
+                                }
 
-                         }
 
+                                if (event.key === "ArrowLeft") {
 
-                         if (event.key === "ArrowRight") {
+                                    showScreen(
+                                        currentIndex - 1
+                                    );
 
-                             showScreen(
-                                 currentIndex + 1
-                             );
+                                }
 
-                         }
+                            }
+                        );
 
 
-                         if (event.key === "ArrowLeft") {
+                        /* =====================================================
+                           INITIAL SCREEN
+                        ===================================================== */
 
-                             showScreen(
-                                 currentIndex - 1
-                             );
+                        showScreen(0);
 
-                         }
+                    }
 
-                     }
-                 );
 
+                    /* =========================================================
+                       BUILD ALL PROJECTS
+                       ========================================================= */
 
-                 /* =====================================================
-                    INITIAL SCREEN
-                 ===================================================== */
+                    projects.forEach(
+                        (project, index) => {
 
-                 showScreen(0);
+                            createProject(
+                                project,
+                                index
+                            );
 
-             }
+                        }
+                    );
 
+                });
 
-             /* =========================================================
-                BUILD ALL PROJECTS
-                ========================================================= */
-
-             projects.forEach(
-                 (project, index) => {
-
-                     createProject(
-                         project,
-                         index
-                     );
-
-                 }
-             );
-
-         });
-
-     </script>
-</body>
+            </script></body>
 
 </html>
