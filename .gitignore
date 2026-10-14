@@ -1,0 +1,16 @@
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Build files
+bin/
+obj/
+
+# Temporary files
+*.tmp
+*.log
+
+# Operating system files
+Thumbs.db
+.DS_Store
